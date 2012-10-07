@@ -1,0 +1,561 @@
+2012-10-06 14:10:57 Error: [MissingControllerException] Controller class EvaluateController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 14:11:05 Error: [MissingTableException] Table processes for model Process was not found in datasource default.
+#0 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(3179): Model->setSource('processes')
+#1 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(2630): DboSource->read(Object(Element), Array)
+#3 C:\AppServ\www\newneu\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\AppServ\www\newneu\app\Controller\ElementsController.php(17): Controller->paginate()
+#6 [internal function]: ElementsController->index()
+#7 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElementsController), Array)
+#8 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElementsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-10-06 14:11:09 Error: [MissingTableException] Table processes for model Process was not found in datasource default.
+#0 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(3179): Model->setSource('processes')
+#1 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(2630): DboSource->read(Object(Element), Array)
+#3 C:\AppServ\www\newneu\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\AppServ\www\newneu\app\Controller\ElementsController.php(17): Controller->paginate()
+#6 [internal function]: ElementsController->index()
+#7 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElementsController), Array)
+#8 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElementsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-10-06 14:11:11 Error: [MissingTableException] Table processes for model Process was not found in datasource default.
+#0 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(3179): Model->setSource('processes')
+#1 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(1301): Model->getDataSource()
+#2 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(1389): Model->schema()
+#3 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(1375): Model->hasField('title', false)
+#4 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(863): Model->hasField(Array)
+#5 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(2775): Model->__get('displayField')
+#6 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(2667): Model->_findList('before', Array)
+#7 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(2625): Model->buildQuery('list', Array)
+#8 C:\AppServ\www\newneu\app\Controller\ElementsController.php(53): Model->find('list')
+#9 [internal function]: ElementsController->add()
+#10 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElementsController), Array)
+#11 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElementsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-06 15:03:30 Error: [MissingTableException] Table processes for model Process was not found in datasource default.
+#0 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(3179): Model->setSource('processes')
+#1 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(1068): Model->getDataSource()
+#2 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(2630): DboSource->read(Object(Element), Array)
+#3 C:\AppServ\www\newneu\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#4 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\AppServ\www\newneu\app\Controller\ElementsController.php(17): Controller->paginate()
+#6 [internal function]: ElementsController->index()
+#7 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElementsController), Array)
+#8 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElementsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-10-06 15:08:15 Error: [MissingViewException] View file "C:\AppServ\www\newneu\app\View\Elements\index.ctp" is missing.
+#0 C:\AppServ\www\newneu\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElementsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 15:08:34 Error: [MissingViewException] View file "C:\AppServ\www\newneu\app\View\Elements\index.ctp" is missing.
+#0 C:\AppServ\www\newneu\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElementsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 15:22:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'recursive' at line 1
+#0 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('recursive', Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('recursive', Array, Array)
+#3 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(613): DboSource->fetchAll('recursive', Array, Array)
+#4 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(784): DboSource->query('recursive', Array, Object(Element))
+#5 C:\AppServ\www\newneu\app\Controller\ElementsController.php(17): Model->__call('recursive', Array)
+#6 C:\AppServ\www\newneu\app\Controller\ElementsController.php(17): Element->recursive()
+#7 [internal function]: ElementsController->index()
+#8 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElementsController), Array)
+#9 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElementsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-06 15:24:41 Error: [NotFoundException] Invalid year
+#0 [internal function]: YearsController->edit('0')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(YearsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(YearsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 15:24:47 Error: [NotFoundException] Invalid year
+#0 [internal function]: YearsController->edit('0')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(YearsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(YearsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 15:24:50 Error: [NotFoundException] Invalid year
+#0 [internal function]: YearsController->edit('1')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(YearsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(YearsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 15:24:53 Error: [NotFoundException] Invalid year
+#0 [internal function]: YearsController->edit()
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(YearsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(YearsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 15:25:02 Error: [NotFoundException] Invalid year
+#0 [internal function]: YearsController->view('0')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(YearsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(YearsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 15:25:07 Error: [NotFoundException] Invalid year
+#0 [internal function]: YearsController->delete('0')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(YearsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(YearsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 15:25:10 Error: [NotFoundException] Invalid year
+#0 [internal function]: YearsController->delete('0')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(YearsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(YearsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 15:28:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Organization.organization_id' in 'on clause'
+#0 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Element...', Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Element...', Array, Array)
+#3 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `Element...', false)
+#4 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(2630): DboSource->read(Object(Element), Array)
+#5 C:\AppServ\www\newneu\app\Controller\ElementsController.php(17): Model->find('all')
+#6 [internal function]: ElementsController->index()
+#7 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElementsController), Array)
+#8 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElementsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-10-06 15:31:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'paginate' at line 1
+#0 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('paginate', Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('paginate', Array, Array)
+#3 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(613): DboSource->fetchAll('paginate', Array, Array)
+#4 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(784): DboSource->query('paginate', Array, Object(Element))
+#5 C:\AppServ\www\newneu\app\Controller\ElementsController.php(17): Model->__call('paginate', Array)
+#6 C:\AppServ\www\newneu\app\Controller\ElementsController.php(17): Element->paginate()
+#7 [internal function]: ElementsController->index()
+#8 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElementsController), Array)
+#9 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElementsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-06 16:25:50 Error: [MissingControllerException] Controller class ElementsController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 16:26:09 Error: [MissingControllerException] Controller class ElementsController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 16:27:42 Error: [MissingControllerException] Controller class ElementsController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 17:11:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('INSERT INTO `ne...', Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(1009): DboSource->execute('INSERT INTO `ne...')
+#3 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(1730): DboSource->create(Object(Relay), Array, Array)
+#4 C:\AppServ\www\newneu\app\Controller\ElemsController.php(48): Model->save(Array)
+#5 [internal function]: ElemsController->add()
+#6 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElemsController), Array)
+#7 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-10-06 21:44:14 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:45:10 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:00 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:20 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:21 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:21 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:22 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:22 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:22 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:22 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:45 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:49 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:51:59 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:52:00 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 21:52:00 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 22:03:24 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 23:08:48 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 23:09:58 Error: [MissingControllerException] Controller class FilesController could not be found.
+#0 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-06 23:34:26 Error: [NotFoundException] Not found
+#0 [internal function]: ElemsController->downloadRelay('120')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElemsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 23:34:34 Error: [MissingViewException] View file "C:\AppServ\www\newneu\app\View\Elems\download_relay.ctp" is missing.
+#0 C:\AppServ\www\newneu\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-06 23:34:46 Error: [MissingViewException] View file "C:\AppServ\www\newneu\app\View\Elems\download_relay.ctp" is missing.
+#0 C:\AppServ\www\newneu\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-07 00:16:57 Error: [MissingActionException] Action ElemsController::downloadRelay() could not be found.
+#0 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-07 00:49:24 Warning: Warning (2): array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\add.ctp, line 6
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 00:49:24 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\add.ctp, line 7
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 00:51:18 Warning: Warning (2): array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\add.ctp, line 7
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 01:44:54 Warning: Warning (2): array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\edit.ctp, line 7
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 01:44:54 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\edit.ctp, line 8
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 01:44:57 Warning: Warning (2): array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\edit.ctp, line 7
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 01:44:57 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\edit.ctp, line 8
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 01:45:00 Warning: Warning (2): array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\edit.ctp, line 7
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 01:45:00 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\edit.ctp, line 8
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 01:45:38 Warning: Warning (2): array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #3 is not an array in [C:\AppServ\www\newneu\lib\Cake\View\Helper\FormHelper.php, line 935]
+Trace:
+array_merge - [internal], line ??
+FormHelper::input() - CORE\Cake\View\Helper\FormHelper.php, line 935
+include - APP\View\Organizations\edit.ctp, line 8
+View::_evaluate() - CORE\Cake\View\View.php, line 920
+View::_render() - CORE\Cake\View\View.php, line 883
+View::render() - CORE\Cake\View\View.php, line 475
+Controller::render() - CORE\Cake\Controller\Controller.php, line 957
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 14:37:48 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007143721_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 16:56:29 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007143721_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 16:56:34 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Relays/20121007143721_โครงงานทางเทคโนโลยีสารสนเทศ.docx) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 16:57:00 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007165653_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 17:03:05 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007143721_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 17:03:34 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007165653_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 17:12:58 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007171253_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 17:14:19 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007171253_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 17:14:46 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007171253_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 17:14:49 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007171253_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 17:15:18 Warning: Warning (2): readfile(http://newneu.com/files/Elements_01/Plans/20121007171253_บทที่ 1.doc) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in [C:\AppServ\www\newneu\app\Controller\ElemsController.php, line 50]
+Trace:
+readfile - [internal], line ??
+ElemsController::download() - APP\Controller\ElemsController.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2012-10-07 17:35:49 Error: [NotFoundException] Invalid elements
+#0 [internal function]: ElemsController->edit()
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElemsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-07 17:35:52 Error: [NotFoundException] Invalid elements
+#0 [internal function]: ElemsController->edit('1')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElemsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-07 17:35:59 Error: [NotFoundException] Invalid elements
+#0 [internal function]: ElemsController->edit('13')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElemsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-07 17:39:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('UPDATE `neu_db`...', Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Model\Datasource\Database\Mysql.php(357): DboSource->execute('UPDATE `neu_db`...')
+#3 C:\AppServ\www\newneu\lib\Cake\Model\Model.php(1715): Mysql->update(Object(Elem), Array, Array)
+#4 C:\AppServ\www\newneu\app\Controller\ElemsController.php(604): Model->save(Array)
+#5 [internal function]: ElemsController->edit('14')
+#6 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElemsController), Array)
+#7 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-10-07 17:58:43 Error: [MissingViewException] View file "C:\AppServ\www\newneu\app\View\Elems\edit_original.ctp" is missing.
+#0 C:\AppServ\www\newneu\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-07 18:03:41 Error: [NotFoundException] Invalid elements
+#0 [internal function]: ElemsController->edit('16')
+#1 C:\AppServ\www\newneu\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ElemsController), Array)
+#2 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\AppServ\www\newneu\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ElemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\AppServ\www\newneu\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
