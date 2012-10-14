@@ -15,16 +15,27 @@ class ElemsController extends AppController {
     public function index() {
         $this->Elem->recursive = 0;
         if($this->request->is('post')){
+
             $this->paginate = array(
             'conditions' => array(
-            'Year.id' => $this->request->data["Elem"]["year_id"],
-            'Organization.id' => $this->request->data["Elem"]["organization_id"])
+            'Elem.year_id' => $this->request->data["Elem"]["year_id"],
+            'Elem.organization_id' => $this->Session->read('User.User.organization_id'))
+            );
+
+        }else{
+            $this->paginate = array(
+            'conditions' => array(
+            'Elem.organization_id' => $this->Session->read('User.User.organization_id'))
             );
         }
-        $organizations = $this->Elem->Organization->find('list');
+        //pr($this->paginate());
+        //$organizations = $this->Elem->Organization->find('list');
+
         $years = $this->Elem->Year->find('list');
-        $this->set(compact('organizations', 'years','relays'));
+        $this->set(compact('years','relays'));
+
         $this->set('elems', $this->paginate());
+
     }
 
     /**
@@ -909,9 +920,11 @@ class ElemsController extends AppController {
 
             // Suggestion
             $suggestion_id = $this->checkSuggestion($this->request->data);
+
             // Move plan file
             $plan_folder = null;
 
+            // Elem path
             if($this->request->data["Elem"]["path"]["name"]){
 
                 $destination_path = realpath("files/Elements_01/Plans");
@@ -1045,12 +1058,12 @@ class ElemsController extends AppController {
             }
 
             //$this->request->data["Elem"]["relay_id"] = $relay_id;
-//            $this->request->data["Elem"]["action_id"] = $action_id;
-//            $this->request->data["Elem"]["evaluate_id"] = $evaluate_id;
-//            $this->request->data["Elem"]["indicator_id"] = $indicator_id;
-//            $this->request->data["Elem"]["operation_id"] = $operation_id;
-//            $this->request->data["Elem"]["report_id"] = $report_id;
-//            $this->request->data["Elem"]["suggestion_id"] = $suggestion_id;
+            //            $this->request->data["Elem"]["action_id"] = $action_id;
+            //            $this->request->data["Elem"]["evaluate_id"] = $evaluate_id;
+            //            $this->request->data["Elem"]["indicator_id"] = $indicator_id;
+            //            $this->request->data["Elem"]["operation_id"] = $operation_id;
+            //            $this->request->data["Elem"]["report_id"] = $report_id;
+            //            $this->request->data["Elem"]["suggestion_id"] = $suggestion_id;
             $this->request->data["Elem"]["path"] = $plan_folder;
 
             if ($this->Elem->save($this->request->data)) {

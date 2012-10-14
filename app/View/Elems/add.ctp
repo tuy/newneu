@@ -1,85 +1,183 @@
-<div class="elems form">
-    <?php echo $this->Form->create('Elem', array( 'enctype' => 'multipart/form-data' )); ?>
-    <fieldset>
-        <legend><?php echo __('เพิ่มข้อมูลแผนการดำเนินงาน'); ?></legend>
-        <?php
-            echo $this->Form->input('organization_id',array('label'=>'คณะ/หน่วยงาน'));
-            echo $this->Form->input('year_id',array('label'=>'ปีการศึกษา'));
-            echo $this->Form->input('name',array('label'=>'ชื่อแผนการดำเนินงาน'));
-            echo $this->Form->input('path',array('type' => 'file'));
-            echo $this->Form->input('date',array('label'=>'วันที่สภาอนุมัติ'));
-            
-            $no ='ไม่มี';
-            $yes='มี';
-            
-            // Relay
-            //echo $this->Form->input('relay_name');
-            $options = array('0' => $no, '1' => $yes);
-            $attributes = array('legend' => 'มีการถ่ายทอดแผนกลยุทธ์ระดับสถาบันไปสู่ทุกหน่วยงานภายใน','default' => '0');
-            echo $this->Form->radio('Relay.type', $options, $attributes);
-            echo $this->Form->input('Relay.path', array('type' => 'file'));
-            
-            // Action
-            $options = array('0' => $no, '1' => $yes);
-            $attributes = array('legend' => 'มีกระบวนการแปลงแผนกลยุทธ์เป็นแผนปฏิบัติการประจำปีครบ 4 พันธกิจ','default' => '0');
-            echo $this->Form->radio('Action.type', $options, $attributes);
-            echo $this->Form->input('Action.path', array('type' => 'file'));
-            
-            // Evaluate
-            $options = array('0' => $no, '1' => $yes);
-            $attributes = array('legend' => 'มีการประเมินผลการดำเนินงานตามตัวบ่งชี้ของแผนกลยุทธ์','default' => '0');
-            echo $this->Form->radio('Evaluate.type', $options, $attributes);
-            echo $this->Form->input('Evaluate.path', array('type' => 'file'));
-            
-            // Indicator
-            $options = array('0' => $no, '1' => $yes);
-            $attributes = array('legend' => 'มีตัวบ่งชี้ของแผนกลยุทธ์ แผนปฏิบัติการประจำปี','default' => '0');
-            echo $this->Form->radio('Indicator.type', $options, $attributes);
-            echo $this->Form->input('Indicator.path', array('type' => 'file'));
-            
-            // Operation
-            $options = array('0' => $no, '1' => $yes);
-            $attributes = array('legend' => 'มีการดำเนินงานตามแผนปฏิบัติการประจำปีครบ 4 พันธกิจ','default' => '0');
-            echo $this->Form->radio('Operation.type', $options, $attributes);
-            echo $this->Form->input('Operation.path', array('type' => 'file'));
-            
-            // Report
-            $options = array('0' => $no, '1' => $yes);
-            $attributes = array('legend' => 'มีการติดตามผลการดำเนินงานตามตัวบ่งชี้ของแผนปฏิบัติการประจำปี','default' => '0');
-            echo $this->Form->radio('Report.type', $options, $attributes);
-            echo $this->Form->input('Report.path', array('type' => 'file'));
-            
-            // Suggestion
-            $options = array('0' => $no, '1' => $yes);
-            $attributes = array('legend' => 'มีการนำผลการพิจารณา ข้อคิดเห็น และข้อเสนอแนะของสภาสถาบันไปปรับปรุงแผนกลยุทธ์และแผนปฏิบัติการประจำปี','default' => '0');
-            echo $this->Form->radio('Suggestion.type', $options, $attributes);
-            echo $this->Form->input('Suggestion.path', array('type' => 'file'));
-        ?>
-    </fieldset>
-    <?php echo $this->Form->end(__('บันทึก')); ?>
-</div>
-<div class="actions">
-    <h3><?php echo __('Actions'); ?></h3>
-    <ul>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li ><a class="brand" href="/mains/index"><i class="icon-home icon-white"></i></a></li>
+                    <li class="active"><a href="/elems/">องค์ประกอบที่ 1</a></li>
+                    <li><a href="/">องค์ประกอบที่ 2</a></li>
+                    <li><a href="/events">องค์ประกอบที่ 3</a></li>
+                    <li><a href="/researches">องค์ประกอบที่ 4</a></li>
+                    <li><a href="/services">องค์ประกอบที่ 5</a></li>
+                    <li><a href="/cultures">องค์ประกอบที่ 6</a></li>
+                    <li><a href="/managements">องค์ประกอบที่ 7</a></li>
+                    <li><a href="/financials">องค์ประกอบที่ 8</a></li>
+                    <li><a href="/qasystems">องค์ประกอบที่ 9</a></li>
+                </ul>
 
-        <li><?php echo $this->Html->link(__('แสดงข้อมูลแผนการดำเนินงาน'), array('action' => 'index')); ?></li>
-        <!--<li><?php echo $this->Html->link(__('แสดงรายละเอียดคณะ/หน่วยงาน'), array('controller' => 'organizations', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('เพิ่มคณะ/หน่วยงาน'), array('controller' => 'organizations', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('แสดงรายละเอียดปีการศึกษา'), array('controller' => 'years', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('เพิ่มปีการศึกษา'), array('controller' => 'years', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Relays'), array('controller' => 'relays', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Relay'), array('controller' => 'relays', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Actions'), array('controller' => 'actions', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Action'), array('controller' => 'actions', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Indicators'), array('controller' => 'indicators', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Indicator'), array('controller' => 'indicators', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Operations'), array('controller' => 'operations', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Operation'), array('controller' => 'operations', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Reports'), array('controller' => 'reports', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Report'), array('controller' => 'reports', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Evaluates'), array('controller' => 'evaluates', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Evaluate'), array('controller' => 'evaluates', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Suggestions'), array('controller' => 'suggestions', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Suggestion'), array('controller' => 'suggestions', 'action' => 'add')); ?> </li>-->
-    </ul>
+                <?php if($this->Session->read('User')){ ?>
+
+                    <p class="navbar-text pull-right">
+                        Logged in as <?php echo $this->Session->read('User.User.username'); ?> | <a href="/users/logout" style="color: white;">Logout</a>
+                    </p>
+                    <?php
+                    }
+                ?>                        
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<!-- End Menu -->
+<header class="jumbotron subhead" id="overview">
+    <div class="container">
+        <h1>Plan Management</h1>
+        <p class="lead">Add new plan</p>
+    </div>
+</header>
+<hr>
+<div class="row-fluid">
+    <div class="span2">
+        <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+                <li class="nav-header">Links</li>                
+                <li ><?php echo $this->Html->link(__('แสดงข้อมูลและหลักฐาน'), array('controller' => 'elems', 'action' => 'index')); ?> </li>
+                <li class="active"><?php echo $this->Html->link(__('เพิ่มข้อมูลแผนการดำเนินงาน'), array('action' => 'add')); ?></li>
+            </ul>
+        </div><!--/.well -->
+    </div><!--/span-->
+    <div class="span10">
+        <div class="elems form">
+            <?php echo $this->Form->create('Elem', array( 'enctype' => 'multipart/form-data' )); ?>
+            <fieldset>
+                <legend><?php echo __('เพิ่มข้อมูลแผนการดำเนินงาน'); ?></legend>
+                <?php
+                    echo $this->Form->input('organization_id',array('label'=>'คณะ/หน่วยงาน'));
+                    echo $this->Form->input('year_id',array('label'=>'ปีการศึกษา'));
+                    echo $this->Form->input('name',array('label'=>'ชื่อแผนการดำเนินงาน'));
+                    echo $this->Form->input('path',array('type' => 'file','label' => false));
+                    echo $this->Form->input('date',array('label'=>'วันที่สภาอนุมัติ'));
+
+                    $no ='ไม่มี';
+                    $yes='มี';
+                ?>
+                <h2>xxx</h2>
+                <table class="table table-striped">
+                    <tr>
+                        <td>มีการถ่ายทอดแผนกลยุทธ์ระดับสถาบันไปสู่ทุกหน่วยงานภายใน</td>
+                        <td>
+                            <?php                    
+                                $options = array('0' => $no, '1' => $yes);
+                                $attributes = array('legend' => false,'default' => '0');
+                                echo $this->Form->radio('Relay.type', $options, $attributes);
+                            ?>
+                        </td>
+                        <td>
+                            <?php
+                                echo $this->Form->input('Relay.path', array('type' => 'file','label' => false));
+                            ?>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>มีกระบวนการแปลงแผนกลยุทธ์เป็นแผนปฏิบัติการประจำปีครบ 4 พันธกิจ คือด้านการเรียนการสอน การวิจัย การบริการทางวิชาการ และการทำนุบำรุงศิลปะและวัฒนธรรม</td>
+                        <td>
+                            <?php                    
+                                $options = array('0' => $no, '1' => $yes);
+                                $attributes = array('legend' => false,'default' => '0');
+                                echo $this->Form->radio('Action.type', $options, $attributes);
+                            ?>
+                        </td>
+                        <td>
+                            <?php
+                                echo $this->Form->input('Action.path', array('type' => 'file','label' => false));
+                            ?>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>มีการประเมินผลการดำเนินงานตามตัวบ่งชี้ของแผนกลยุทธ์</td>
+                        <td>
+                            <?php                    
+                                $options = array('0' => $no, '1' => $yes);
+                                $attributes = array('legend' => false,'default' => '0');
+                                echo $this->Form->radio('Evaluate.type', $options, $attributes);
+                            ?>
+                        </td>
+                        <td>
+                            <?php
+                                echo $this->Form->input('Evaluate.path', array('type' => 'file','label' => false));
+                            ?>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>มีตัวบ่งชี้ของแผนกลยุทธ์ แผนปฏิบัติการประจำปี</td>
+                        <td>
+                            <?php                    
+                                $options = array('0' => $no, '1' => $yes);
+                                $attributes = array('legend' => false,'default' => '0');
+                                echo $this->Form->radio('Indicator.type', $options, $attributes);
+                            ?>
+                        </td>
+                        <td>
+                            <?php
+                                echo $this->Form->input('Indicator.path', array('type' => 'file','label' => false));
+                            ?>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>มีการดำเนินงานตามแผนปฏิบัติการประจำปีครบ 4 พันธกิจ</td>
+                        <td>
+                            <?php                    
+                                $options = array('0' => $no, '1' => $yes);
+                                $attributes = array('legend' => false,'default' => '0');
+                                echo $this->Form->radio('Operation.type', $options, $attributes);
+                            ?>
+                        </td>
+                        <td>
+                            <?php
+                                echo $this->Form->input('Operation.path', array('type' => 'file','label' => false));
+                            ?>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>มีการติดตามผลการดำเนินงานตามตัวบ่งชี้ของแผนปฏิบัติการประจำปี</td>
+                        <td>
+                            <?php                    
+                                $options = array('0' => $no, '1' => $yes);
+                                $attributes = array('legend' => false,'default' => '0');
+                                echo $this->Form->radio('Report.type', $options, $attributes);
+                            ?>
+                        </td>
+                        <td>
+                            <?php
+                                echo $this->Form->input('Report.path', array('type' => 'file','label' => false));
+                            ?>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>มีการนำผลการพิจารณา ข้อคิดเห็น และข้อเสนอแนะของสภาสถาบันไปปรับปรุงแผนกลยุทธ์และแผนปฏิบัติการประจำปี</td>
+                        <td>
+                            <?php                    
+                                $options = array('0' => $no, '1' => $yes);
+                                $attributes = array('legend' => false,'default' => '0');
+                                echo $this->Form->radio('Suggestion.type', $options, $attributes);
+                            ?>
+                        </td>
+                        <td>
+                            <?php
+                                echo $this->Form->input('Suggestion.path', array('type' => 'file','label' => false));
+                            ?>
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+            <?php echo $this->Form->end(__('บันทึก')); ?>
+        </div>
+    </div>
 </div>
